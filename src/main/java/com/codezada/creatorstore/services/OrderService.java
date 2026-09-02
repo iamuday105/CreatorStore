@@ -21,13 +21,14 @@ import java.util.List;
 @RequiredArgsConstructor
 public class OrderService {
 
-    BigDecimal totalPrice = BigDecimal.ZERO;
+
 
     private final OrderRepository orderRepository;
     private final ProductRepository productRepository;
 
     @Transactional
     public Order createOrder(OrderRequest orderRequest){
+        BigDecimal totalPrice = BigDecimal.ZERO;
         List<OrderItem> orderItems = new ArrayList<>();
         Order order = new Order();
         order.setCustomerName(orderRequest.getCustomerName());

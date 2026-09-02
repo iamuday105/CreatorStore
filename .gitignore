@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# React
+creatorstore-react/node_modules/
+creatorstore-react/dist/
