@@ -1,0 +1,21 @@
+spring:
+  application:
+     name: CreatorStore
+
+#     Database information
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/CreatorStore
+    username: postgres
+    password: Ram@1234
+
+# Hibernate ORM Configuration
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql : true
+    properties:
+      hibernate:
+        format_sql: true
+
